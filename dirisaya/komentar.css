@@ -1,0 +1,239 @@
+
+
+@import url('--varcolor.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-style: normal;
+    font-size: clamp(0.2rem, 0.1789rem + 2.4783vw, 1rem);
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'RMM';
+    src: url('asset/font/Reddit_Mono/static/RedditMono-Medium.ttf');
+}
+
+body{
+    /* background-image: url(asset/sip.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(248, 248, 248, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tcuy{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--5);
+    display: grid;
+    place-items: center;
+}
+
+.hp{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    align-self: flex-end;
+    padding: 20% 0px;
+    padding: 20px;
+}
+
+.profil{
+    width: 20px;
+    height: 20px;
+    background-color: var(--5);
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+
+.saya{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.namenya{
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.message-con{
+    display: flex;
+}
+
+.message{
+    position: relative;
+    max-width: 450px;
+    width: auto;
+    padding: 20px;
+    width: calc(80% - 40px);
+    background-color: var(--dr3);
+    color: var(--1);
+    font-size: 18px;
+    left: 0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.message a{
+    color: cyan;
+}
+
+.pucuk{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: var(--2);
+}
+
+.user{
+    align-self: self-end;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.message2 {
+    position: relative;
+    max-width: 450px;
+    width: auto;
+    width: calc(80% - 40px);
+    padding: 20px;
+    background-color: var(--8);
+    color: var(--1);
+    font-size: clamp(0.2rem, 0.1789rem + 2.4783vw, 1rem);
+    right: 0;
+    align-self: self-end;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.pucuk2 {
+    position: relative;
+    width: 40px;
+    align-self: self-end;
+    height: 40px;
+    background-color: var(--8);
+}
+
+.s1{
+    animation: saya1 1s linear forwards;
+    opacity: 0;
+}
+
+.s2 {
+    animation: saya1 1s linear forwards;
+    animation-delay: 5s;
+    opacity: 0;
+}
+
+.s3 {
+    animation: saya1 1s linear forwards;
+    animation-delay: 6.5s;
+    opacity: 0;
+}
+
+@keyframes saya1 {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(20px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.kir1{
+    animation: kanan .5s linear forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.kir2{
+    animation: kanan .5s linear forwards;
+    animation-delay: 5s;
+    opacity: 0;
+}
+
+.kir3 {
+    animation: kanan .5s linear forwards;
+    animation-delay: 7s;
+    opacity: 0;
+}
+
+@keyframes kanan {
+    0% {
+            transform: translateX(-50px);
+            opacity: 0;
+        }
+    
+        100% {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+}
+
+.u1{
+    animation: user 1s linear forwards;
+    animation-delay: 3.5s;
+    opacity: 0;
+}
+
+@keyframes user {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(-20px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.kan1{
+    animation: kiri .5s linear forwards;
+    animation-delay: 4s;
+    opacity: 0;
+}
+
+@keyframes kiri {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

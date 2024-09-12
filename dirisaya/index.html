@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Portofolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="shortcut icon" href="asset/Bie-ligt.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <div class="mouse-follow"></div> -->
+
+    <div class="miring">
+        <p>B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e
+        B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e
+        B.i.e B.i.e B.i.e B.i.e B.i.e</p>
+    </div>
+    <div class="nav" id="nav">
+        <div class="logo-header">
+            <p class="logone"><span>F</span>irdhan.</p>
+            <!-- <span class="bieweb">web.</span> -->
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="#home" onclick="buka()"><p>Home</p></a></li><span class="dot-head"></span>
+                <li><a href="#about"><p>About</p></a></li><span class="dot-head"></span>
+                <li><a href="#rate"><p>Projects</p></a></li><span class="dot-head"></span>
+                <li><a href="#footer"><p>Address</p></a></li>
+            </ul>
+        </div>
+        <div class="menu-buka" id="kosil" onclick="buka()" >
+            <div class="baris1" id="baris1"></div>
+            <div class="baris3" id="baris3"></div>
+        </div>
+        
+    </div>
+
+    <section class="home" id="home">
+        <div class="section-1-kiri">
+            <div class="nama-sc1">Firdhan Abivandya</div>
+            <div class="featured-name">
+                <p class="Prtyp">I'm <span class="typedText"></span></p>
+            </div>
+            <div class="info-sc1">
+                <p>Just a young man with a hobby of caring for plants and eating bananas
+                </p>
+            </div>
+            <div class="CONbtn-sc1">
+                <div class="btn-sc1 btnck">
+                    <p>Haii</p>
+                </div>
+                <a href="#about" class="btn-sc1 expl">
+                    <p>Lebih Banyak Lagi!</p>
+                </a>
+            </div>
+            <div class="sosmed-sc1">
+                <a href="https://www.instagram.com/bielderfeld?igsh=YzVkODRmOTdmMw==" class="icond"><i class="uil uil-instagram"></i></a>
+                <a href="https://wa.me/087739770494" class="icond"><i class="uil uil-whatsapp"></i></a>
+                <a href="#" class="icond"><i class="uil uil-twitter"></i></a>
+                <a href="https://github.com/Vandyaaa" class="icond"><i class="uil uil-github-alt"></i></a>
+            </div>
+        </div>
+        <div class="section-1-kanan">
+            <div class="profil">
+                <img src="asset/kopi.png" alt="Kuceng">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="awalsc">About Me</h1>
+        <div class="row-sc2">
+            <div class="sc2-kiri">
+                <div class="info-sc2">
+                    <div class="head-info">My Introduction </div>
+                    <div class="isi-info">
+                        Hello, my name is Firdhan Abivandya.
+                        I was born in Surakarta on 21 June 2007.
+                        I am currently attending SMKN 5 Surakarta,
+                        majoring in Rekayasa Perangkat Lunak (RPL).
+                        Here, I am gaining new knowledge that I hadn't known before,
+                        and I am eager to delve deeper into this field to make it beneficial for my future.
+                    </div>
+                </div>
+            </div>
+            <div class="con-skill">
+                <h1 class="skill-title">My Skills<span class="dot-skill"></span></h1>
+                <div class="col">
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Backend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>PHP</span>
+                            <span>JAVA</span>
+                        </div>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Database</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="rate" id="rate">
+        <h1 class="awalsc">Projects</h1>
+        <div class="container-rowsc3" id="rowsc3">
+            <div class="row-sc3">
+                <div class="projek pj1" onclick="openModal('asset/Al-quran.png', 'Al-Quran',
+                    'Ini adalah salahsatu Section ungulan dari web riyadh, dimana section ini berisi ayat-ayat Al-Quran yang komplit yang diambil dari API milik Kementrian Keagamaan, di dalam section ini terapat beberapa fitur yang fungsional, yakni pengguna dapat menggatur ukuran huruf sesuai dengan keinginan. '
+                )">
+                    <div class="pj-title">Al-Quran</div>
+                </div>
+                <div class="projek pj2" onclick="openModal('asset/gap.png', 'Gap', 
+                    'Sebuah web ujicoba yang berisi beberapa gambar, dan ketika mouse berada diatas salah satu gambar tersebut, maka gambar tersebut akan membesar')">
+                    <div class="pj-title">Gap Models</div>
+                </div>
+                <div class="projek pj3" onclick="openModal('asset/kotak.png', 'Kotak', 'sama seperti projek gap tadi. ini adalah web ujicoba yang berisi kotak yan masing-masing kotaknya berisi setiap huruf dari nama saya FIRDHAN ')">
+                    <div class="pj-title">Just a Rectangle</div>
+                </div>
+                <div class="projek pj4" onclick="openModal('asset/riyadh.png', 'Riyadh', 'Ini adalah web perojek dari sekolahan yang dikerjakan oleh 3 orang dalam 1 keompok, web ini berisikan Al-Quran, Huruf hijaiyah, Angka-angka dalam penulisan Arab, Iqra 1 - 6, Jadwal sholat di berbagai daerah. laku juda ada sistem administrasi, dimana ada 2 jenis pengguna, yakni user biasa, dan user admin. ketika penguna adalah user biasa maka user hanya bisa melihat informasi tugas dari guru di section tugas, lalu jika pengguna user admin, maka pengguna dapat menggakses section khusus untyk admin, yang dimana dapat membuat penggumuman atau tugas ')">
+                    <div class="pj-title">Riyadh Web</div>
+                </div>
+                <div class="projek pj5" onclick="openModal('asset/portofolio2.png', 'Portfolio', 'ini adalah web portofolio data diri saya yang kedua')">
+                    <div class="pj-title">Portofolio</div>
+                </div>
+                <div class="projek pj6" onclick="openModal('asset/lope.png', 'Heart', 'ini adalah sebuah web yang dikhususkan sebagai sebuah kado untuk orang yang sedang jatuh cinta maupun sebagai tanda ucapan ulang tahun')">
+                    <div class="pj-title">Hearth</div>
+                </div>
+                
+            </div>
+        </div>
+        <a href="project.html" class="show-all" id="expand">Show All</a>
+        
+        <!-- Modal for Image Zoom -->
+        <div id="myModal" class="modal">
+            <div class="con-modal">
+                <div class="row-modal">
+                    <div id="caption"></div>
+                    <div class="closee" id="closee" onclick="closeModal()">
+                        <i class="fi fi-sr-cross-small"></i>
+                </div>
+                </div>
+                <img class="modal-content" id="img01">
+                
+                    <div class="con-desk" id="condesk">
+                        <div class="description" id="deskripsi">
+                        
+                        </div>
+                    </div>
+                    <div class="desc" id="desc" onclick="desk()"><i class="fi fi-br-angle-small-up"></i></div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="komen" id="footer">
+        <h1 class="awalsc">Send me a message</h1>
+        <div class="row-sc4">
+            <iframe class="projek-sc4"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d402.9684349500548!2d110.83579813551448!3d-7.56395221206352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMzMnNTAuMiJTIDExMMKwNTAnMTAuMCJF!5e1!3m2!1sid!2sid!4v1724573132174!5m2!1sid!2sid"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form action="komentar.php" method="POST">
+                <div class="row-form">
+                    <input type="text" id="judul" name="judul" placeholder="Title" required autocomplete="off">
+                    <input type="text" id="nama" name="nama" placeholder="Your name" required autocomplete="off">
+                </div>
+                <textarea id="isi" name="isi" placeholder="Type Out Something" required autocomplete="off"></textarea>
+
+                <button class=" kirim" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="top-footer">
+            <p class="logone logone2">Bie.</p>
+        </div>
+        <div class="footer-social-icons">
+            <a href="https://www.instagram.com/aeropostaleize?igsh=YzVkODRmOTdmMw==" class="icon" data-sr-id="27" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.2s;"><i class="uil uil-instagram"></i></a>
+            <a href="#" class="icon" data-sr-id="28" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.3s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.3s;"><i class="uil uil-whatsapp"></i></a>
+            <a href="#" class="icon" data-sr-id="29" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.4s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.4s;"><i class="uil uil-twitter"></i></a>
+            <a href="https://github.com/Vandyaaa" class="icon" data-sr-id="30" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.5s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.5s;"><i class="uil uil-github-alt"></i></a>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright © <a href="#" style="text-decoration: none;">Firdhan Abivandya</a> - All rights reserved
+            </p>
+        </div>
+    </footer>
+    <div class="backatas" id="backatas" onclick="scrollToTop()">
+        <lord-icon src="https://cdn.lordicon.com/dwoxxgps.json" trigger="hover">
+        </lord-icon>
+    </div>
+    
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
