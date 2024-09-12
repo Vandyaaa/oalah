@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pojects</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="shortcut icon" href="asset/vilogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <div class="mouse-follow"></div> -->
+
+    <div class="miring">
+        <p>
+            B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e
+            B.i.e B.i.e
+            B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e B.i.e
+            B.i.e B.i.e
+            B.i.e B.i.e B.i.e B.i.e B.i.e
+        </p>
+    </div>
+    <div class="nav" id="nav">
+        <div class="logo-header">
+            <p class="logone">Firdhan.</p>
+            <!-- <span class="bieweb">web.</span> -->
+        </div>
+        <!-- <a href="index.html" class="back">Back</a> -->
+        <div class="c-back">
+            <p class="title-page">Projects</p>
+            <span class="dot-head"></span>
+            <a href="index.html" class="back">Back</a>
+            <!-- <span class="bieweb">web.</span> -->
+        </div>
+    </div>
+
+    <section class="rate" id="rate">
+        <div class="featured-name">
+            <p class="awalsc2"><span class="typedText"></span></p>
+        </div>
+        <div class="container-rowsc3" id="rowsc3">
+            <div class="row-sc3">
+                <div class="projek pj1" onclick="openModal('asset/Al-quran.png', 'Al-Quran',
+                                    'Ini adalah salahsatu Section ungulan dari web riyadh, dimana section ini berisi ayat-ayat Al-Quran yang komplit yang diambil dari API milik Kementrian Keagamaan, di dalam section ini terapat beberapa fitur yang fungsional, yakni pengguna dapat menggatur ukuran huruf sesuai dengan keinginan. '
+                                )">
+                    <div class="pj-title">Al-Quran</div>
+                </div>
+                <div class="projek pj2"
+                    onclick="openModal('asset/gap.png', 'Gap', 
+                                    'Sebuah web ujicoba yang berisi beberapa gambar, dan ketika mouse berada diatas salah satu gambar tersebut, maka gambar tersebut akan membesar')">
+                    <div class="pj-title">Gap Models</div>
+                </div>
+                <div class="projek pj3"
+                    onclick="openModal('asset/kotak.png', 'Kotak', 'sama seperti projek gap tadi. ini adalah web ujicoba yang berisi kotak yan masing-masing kotaknya berisi setiap huruf dari nama saya FIRDHAN ')">
+                    <div class="pj-title">Just a Rectangle</div>
+                </div>
+                <div class="projek pj4"
+                    onclick="openModal('asset/riyadh.png', 'Riyadh', 'Ini adalah web perojek dari sekolahan yang dikerjakan oleh 3 orang dalam 1 keompok, web ini berisikan Al-Quran, Huruf hijaiyah, Angka-angka dalam penulisan Arab, Iqra 1 - 6, Jadwal sholat di berbagai daerah. laku juda ada sistem administrasi, dimana ada 2 jenis pengguna, yakni user biasa, dan user admin. ketika penguna adalah user biasa maka user hanya bisa melihat informasi tugas dari guru di section tugas, lalu jika pengguna user admin, maka pengguna dapat menggakses section khusus untyk admin, yang dimana dapat membuat penggumuman atau tugas ')">
+                    <div class="pj-title">Riyadh Web</div>
+                </div>
+                <div class="projek pj5"
+                    onclick="openModal('asset/portofolio2.png', 'Portfolio', 'ini adalah web portofolio data diri saya yang kedua')">
+                    <div class="pj-title">Portofolio</div>
+                </div>
+                <div class="projek pj6"
+                    onclick="openModal('asset/lope.png', 'Heart', 'ini adalah sebuah web yang dikhususkan sebagai sebuah kado untuk orang yang sedang jatuh cinta maupun sebagai tanda ucapan ulang tahun')">
+                    <div class="pj-title">Hearth</div>
+                </div>
+                <div class="projek pj7" onclick="openModal('asset/lamp.png', 'A lamp on the darkness', 'hanya lampu yang bersinar, apa istimewanya?')">
+                    <div class="pj-title">Lampu</div>
+                </div>
+                <div class="projek pj8" onclick="openModal('asset/galpod-app.png', 'UI/UX Gallery App Design', 'sebuah mocukup projek aplikasi gallery foto')">
+                    <div class="pj-title">Galpod</div>
+                </div>
+            </div>
+        </div>
+        <a href="index.html" class="show-all" id="expand">Less</a>
+
+        <!-- Modal for Image Zoom -->
+                <div id="myModal" class="modal">
+                    <div class="con-modal">
+                        <div class="row-modal">
+                            <div id="caption"></div>
+                            <div class="closee" id="closee" onclick="closeModal()">
+                                <i class="fi fi-sr-cross-small"></i>
+                            </div>
+                        </div>
+                        <img class="modal-content" id="img01">
+                
+                        <div class="con-desk" id="condesk">
+                            <div class="description" id="deskripsi">
+                
+                            </div>
+                        </div>
+                        <div class="desc" id="desc" onclick="desk()"><i class="fi fi-br-angle-small-up"></i></div>
+                
+                    </div>
+                </div>
+    </section>
+
+    <footer>
+        <div class="top-footer">
+            <p class="logone logone2">Firdhan.</p>
+        </div>
+        <div class="footer-social-icons">
+            <a href="https://www.instagram.com/aeropostaleize?igsh=YzVkODRmOTdmMw==" class="icon" data-sr-id="27"
+                style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.2s;"><i
+                    class="uil uil-instagram"></i></a>
+            <a href="#" class="icon" data-sr-id="28"
+                style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.3s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.3s;"><i
+                    class="uil uil-whatsapp"></i></a>
+            <a href="#" class="icon" data-sr-id="29"
+                style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.4s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.4s;"><i
+                    class="uil uil-twitter"></i></a>
+            <a href="https://github.com/Vandyaaa" class="icon" data-sr-id="30"
+                style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.5s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.5s;"><i
+                    class="uil uil-github-alt"></i></a>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright © <a href="#" style="text-decoration: none;">Firdhan Abivandya</a> - All rights reserved
+            </p>
+        </div>
+    </footer>
+    <div class="backatas" id="backatas" onclick="scrollToTop()">
+        <lord-icon src="https://cdn.lordicon.com/dwoxxgps.json" trigger="hover">
+        </lord-icon>
+    </div>
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="reveal.js">
+    </script>
+</body>
+
+</html>
