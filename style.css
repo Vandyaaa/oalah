@@ -66,11 +66,10 @@ body {
     border-radius: 50%;
     pointer-events: none;
 } */
-
-.miring{
+.miring {
     position: fixed;
     z-index: -90;
-    width: 100%;
+    width: 200%;
     height: 50vh;
     background-color: #ece2cc;
     background-color: #333;
@@ -81,8 +80,7 @@ body {
     /* Mengatur ukuran background */
     background-position: center;
     top: 20%;
-    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
-    transform: skewY(10deg);
+    transform: skew(20deg, 10deg) translateY(80%) translateX(-50%);
     opacity: 70%;
     animation: gradientAnimation 10s ease infinite;
     color: var(--1);
@@ -94,11 +92,17 @@ body {
     overflow: hidden;
 }
 
-.miring p{
+.miring p {
     text-align: center;
     position: absolute;
+    display: block;
 }
 
+@media screen and (max-width:767px) {
+    .miring {
+        top: -8%;
+    }
+}
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 0%;
