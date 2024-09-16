@@ -358,6 +358,7 @@ span {
     z-index: 1;
     object-fit: cover;
     -webkit-user-drag: none;
+    scale: .7;
 }
 
 @media screen and (max-width:767px) {
