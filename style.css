@@ -226,6 +226,7 @@ section {
 .typedText{
     color: var(--1);
     text-decoration: underline;
+    opacity: .5;
 }
 
 
