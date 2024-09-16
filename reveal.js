@@ -58,19 +58,19 @@ function desk() {
 
 var prevScrollpos = window.pageYOffset;
 var hed = document.getElementById("nav");
-window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        hed.style.top = "0";
-        hed.style.opacity = 1;
-        hed.style.height = "80px";
-        hed.style.background = "var(--dr3)";
-    } else {
-        hed.style.top = "0px";
-        hed.style.height = "65px";
-    }
-    prevScrollpos = currentScrollPos;
-}
+// window.onscroll = function () {
+//     var currentScrollPos = window.pageYOffset;
+//     if (prevScrollpos > currentScrollPos) {
+//         hed.style.top = "0";
+//         hed.style.opacity = 1;
+//         hed.style.height = "80px";
+//         hed.style.background = "var(--dr3)";
+//     } else {
+//         hed.style.top = "0px";
+//         hed.style.height = "65px";
+//     }
+//     prevScrollpos = currentScrollPos;
+// }
 
 function desk() {
     var desk = [
