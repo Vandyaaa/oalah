@@ -82,7 +82,7 @@
                 </div>
                 <div class="projek pj9"
                     onclick="openModal('asset/ss.png', 'Calculablew', 'sebuah kalkulator sederhana')">
-                    <a href="https://vandyaaa.github.io/calculablew/" class="pj-title">Calculablew</div>
+                    <div class="pj-title">Calculablew</div>
                 </div>
             </div>
         </div>
@@ -90,7 +90,7 @@
 
         <!-- Modal for Image Zoom -->
                 <div id="myModal" class="modal">
-                    <div class="con-modal">
+                    <div class="con-modal" >
                         <div class="row-modal">
                             <div id="caption"></div>
                             <div class="closee" id="closee" onclick="closeModal()">
@@ -100,11 +100,16 @@
                         <img class="modal-content" id="img01">
                 
                         <div class="con-desk" id="condesk">
+                            
                             <div class="description" id="deskripsi">
-                
+                                
                             </div>
+                            
                         </div>
-                        <div class="desc" id="desc" onclick="desk()"><i class="fi fi-br-angle-small-up"></i></div>
+                        <div class="desc" id="desc" onclick="desk()">
+                            <div class="mor"><i class="fi fi-br-angle-double-small-left"></i><p>more</p></div>
+                            <div class="les"><p>less</p><i class="fi fi-br-angle-double-small-right"></i></div>
+                        </div>
                 
                     </div>
                 </div>
@@ -145,6 +150,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/8d377ac39a.js" crossorigin="anonymous"></script>
     <script src="reveal.js">
     </script>
 </body>

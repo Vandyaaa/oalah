@@ -44,6 +44,7 @@ function openModal(src, title, description) {
     var captionText = document.getElementById("caption");
     var descriptionText = document.getElementById("deskripsi");
 
+    modal.classList.toggle("modl");
     modal.style.display = "flex";
     modal.style.justifyContent = "center";
     modal.style.flexDirection = "column";

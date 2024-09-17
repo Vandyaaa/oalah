@@ -24,6 +24,7 @@ function openModal(src, title, description) {
     var captionText = document.getElementById("caption");
     var descriptionText = document.getElementById("deskripsi");
 
+    modal.classList.toggle("modl");
     modal.style.display = "flex";
     modal.style.justifyContent = "center";
     modal.style.flexDirection = "column";
@@ -36,7 +37,9 @@ function openModal(src, title, description) {
 
 function closeModal() {
     var modal = document.getElementById("myModal");
-    modal.style.display = "none";
+
+    // Panggil kembali openModal untuk melakukan perubahan tambahan, jika diperlukan
+    openModal(); // Bisa gunakan argumen default atau sesuai kebutuhan
 }
 
 
