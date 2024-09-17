@@ -37,9 +37,7 @@ function openModal(src, title, description) {
 
 function closeModal() {
     var modal = document.getElementById("myModal");
-
-    // Panggil kembali openModal untuk melakukan perubahan tambahan, jika diperlukan
-    openModal(); // Bisa gunakan argumen default atau sesuai kebutuhan
+    modal.style.display = "none";
 }
 
 

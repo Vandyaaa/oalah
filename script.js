@@ -54,10 +54,12 @@ function openModal(src, title, description) {
     descriptionText.innerHTML = description;
 }
 
+
 function closeModal() {
     var modal = document.getElementById("myModal");
     modal.style.display = "none";
 }
+
 
 function desk() {
     var desk = [

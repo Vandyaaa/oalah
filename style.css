@@ -251,6 +251,7 @@ span {
     display: flex;
     margin: 30px 0px;
     text-decoration: none;
+    overflow: hidden;
 }
 
 .home .section-1-kiri .CONbtn-sc1 .btn-sc1 p {
@@ -258,7 +259,7 @@ span {
 }
 
 .home .section-1-kiri .CONbtn-sc1 .btn-sc1 {
-    padding: 10px 30px;
+    
     height: 50px;
     border-radius: 10px;
     margin-right: 10px;
@@ -267,16 +268,62 @@ span {
     font-size: 10px;
     font-weight: 500;
     text-decoration: none;
+    overflow: hidden;
 }
 
 .home .btnck {
     background-color: var(--dr3);
     color: var(--2);
+    width: 50px;
+    display: grid;
+    place-items: center;
+    padding: 0px 0px;
+    overflow: hidden;
+    transition: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.home .btnck p {
+.home .btnck i {
     transition: .3s;
     font-weight: 600;
+    font-size: 15px;
+    display: grid;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+    opacity: 1;
+    scale: 1;
+}
+
+.home .btnck .ceve{
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    visibility: hidden;
+    background-color: var(--1);
+    color: var(--5);
+    scale: 0;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.ceve p{
+    font-weight: 600;
+}
+
+.home .btnck:hover i{
+    scale: 0;
+    opacity: 0;
+}
+
+.home .btnck:hover .ceve {
+    scale: 1;
+    opacity: 1;
+    visibility: visible;
 }
 
 .home .expl {
@@ -285,6 +332,7 @@ span {
     text-decoration: none;
     overflow: hidden;
     position: relative;
+    padding: 10px 30px;
 }
 
 .home .expl p{
@@ -658,14 +706,13 @@ span {
 
 /* Style for the modal */
 .modal {
-    display: flex;
+    display: none;
     /* Hidden by default */
     position: fixed;
     /* Stay in place */
     z-index: 1;
     /* Sit on top */
     left: 0;
-    scale: 0;
     top: 0;
     width: 100%;
     height: 100%;
@@ -681,46 +728,6 @@ span {
     overflow: hidden;
 }
 
-.modal.modl{
-    animation: opac2 .2s forwards;
-}
-
-@keyframes opac1 {
-    0% {
-
-        opacity: 1;
-        scale: 1;
-    }
-
-    50% {
-        opacity: 0;
-        scale: 0;
-    }
-
-    100% {
-
-        opacity: 0;
-        scale: .0;
-    }
-}
-
-@keyframes opac2 {
-    0% {
-        
-        opacity: 0;
-        scale: 0;
-    }
-    20%{
-        opacity: 0;
-        scale: 1;
-    }
-
-    100% {
-        
-        opacity: 1;
-        scale: 1;
-    }
-}
 
 .con-modal{
     display: flex;
@@ -878,9 +885,9 @@ span {
 
 .con-desk {
     position: absolute;
-    width: 80%;
+    width: 75%;
     max-width: 500px;
-    height: 50vh;
+    height: 60vh;
     transform: translateX(100%);
     display: grid;
     place-items: center;
@@ -898,9 +905,7 @@ span {
 }
 
 .description {
-    height: 80%;
-    width: 70%;
-    
+    width: 50%;
 }
 
 .description::before{
@@ -1103,6 +1108,8 @@ span {
     flex-direction: column;
     gap: 0px;
     width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .komen .row-sc4 .row-form{
@@ -1179,8 +1186,19 @@ width: 100%;
     height: 50px;
     color: var(--2);
     border-radius: 12px;
-    width: 80px;
+    width: 50px;
     margin-top: 10px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.komen .kirim i{
+    width: max-content;
+    display: grid;
+    place-items: center;
 }
 
 @media (max-width:767px) {
