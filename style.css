@@ -226,6 +226,7 @@ section {
 .typedText{
     color: var(--1);
     text-decoration: underline;
+    opacity: 1;
 }
 
 
@@ -358,7 +359,6 @@ span {
     z-index: 1;
     object-fit: cover;
     -webkit-user-drag: none;
-    scale: .7;
 }
 
 @media screen and (max-width:767px) {
