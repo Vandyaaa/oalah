@@ -368,7 +368,6 @@ span {
 }
 
 .home .sosmed-sc1 .icond {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -379,7 +378,6 @@ span {
     color: var(--1);
     cursor: pointer;
     font-size: 16px;
-
 }
 
 .home .section-1-kanan {
