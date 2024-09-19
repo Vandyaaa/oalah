@@ -12,6 +12,7 @@
     font-style: normal;
     scroll-behavior: smooth;
     transition: .5s;
+    user-select: none;
 }
 
 @font-face {
@@ -21,7 +22,6 @@
 
 body {
     background-color: var(--5);
-    
 }
 
 ::-webkit-scrollbar{
@@ -39,7 +39,7 @@ body {
     border-radius: 10px;
 }
 
-.expl, .btnck, .logone, .expand, .send, footer{
+.expl, .btnck, .logone, .expand, .send, footer, button{
     user-select: none;
 }
 
@@ -387,24 +387,26 @@ span {
     place-items: center;
 }
 
-.home .section-1-kanan .profil {
+.profil {
     width: 230px;
     height: 230px;
     border-radius: 50%;
-    background-color: var(--5);
+    background: linear-gradient(135deg, #292723, #312b23);
     object-fit: contain;
     position: relative;
     overflow: hidden;
     z-index: 1;
     border: solid 3px var(--dr3);
     user-select: none;
+    animation: animateBackground 5s ease infinite;
+    /* Animasi */
 }
-
 .home .section-1-kanan .profil img {
     width: 100%;
     z-index: 1;
     object-fit: cover;
     -webkit-user-drag: none;
+    filter: drop-shadow(0px 10px 15px rgba(227, 215, 203, 0.2));
 }
 
 @media screen and (max-width:767px) {
@@ -676,6 +678,22 @@ span {
 
 .pj9{
     background-image: url('asset/ss.png');
+}
+
+.pj10 {
+    background-image: url('asset/jadwal\ sholat.png');
+}
+
+.pj11 {
+    background-image: url('asset/P5.png');
+}
+
+.pj12 {
+    background-image: url('asset/Sistem\ Upload.png');
+}
+
+.pjend {
+    background-image: url('asset/siprb.png');
 }
 
 .pj-title {
@@ -1017,9 +1035,12 @@ span {
         transform:  scale(.5);
         transform: translateX(-200%);
     }
+    .desc {
+        transform: translateY(0);
+    }
 
     .desc.swapkanan {
-        transform: translateY(310%);
+        bottom: -10vh;
         background-color: var(--5);
 
         position: relative;
@@ -1027,7 +1048,8 @@ span {
 
     .con-desk {
         width: 100%;
-        text-align: left;
+        height: 50vh;
+        text-align: center;
         border-radius: 20px;
         position: absolute;
         overflow: hidden;
@@ -1035,7 +1057,7 @@ span {
     }
 
     .con-desk.swapkanan{
-    transform: translateY(calc(10%));
+    transform: translateX(0%);
     opacity: 1;
     }
 
@@ -1044,7 +1066,7 @@ span {
     }
 
     .description{
-        height: 100%;
+
         padding-top: 20px;
         overflow-y: scroll;
     }
@@ -1108,6 +1130,10 @@ span {
     width: 100%;
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
+    border: dashed var(--8);
+    box-sizing: content-box;
+    background-color: var(--1);
 }
 
 .komen .row-sc4 .row-form{
@@ -1120,28 +1146,10 @@ span {
     height: 55px;
     width: 100%;
     background: var(--7);
-    border: 3px solid var(--8);
-    border-radius: 10px;
+    border: none;
     outline: none;
     padding: 15px 20px;
     font-weight: 600;
-}
-
-.komen .row-sc4 #nama{
-    
-    border-left: none;
-    border-right: dashed var(--8);
-    border-bottom: none;
-    border-top: dashed var(--8);
-    border-radius: 0px 10px 0px 0px;
-}
-
-.komen .row-sc4 #judul{
-    border-left: dashed var(--8);
-    border-right: none;
-    border-bottom: none;
-    border-top: dashed var(--8);
-    border-radius: 10px 0px 0px 0px;
 }
 
 @media (max-width:767px) {
@@ -1168,11 +1176,7 @@ span {
 width: 100%;
     height: 245px;
     background: var(--7);
-    border-left: dashed var(--8);  
-    border-right: dashed var(--8);  
-    border-bottom: dashed var(--8); 
-    border-top: none; 
-    border-radius: 0px 0px 10px 10px;
+    border: none;
     padding: 15px 20px;
     outline: none;
     resize: none;

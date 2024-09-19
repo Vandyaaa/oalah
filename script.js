@@ -1,3 +1,74 @@
+ 
+
+const bottom = ScrollReveal({
+    origin: 'bottom',
+    distance: '40px',
+    duration: 1000,
+    reset: true     
+})
+bottom.reveal('.nama-sc1', {})
+bottom.reveal('.featured-name', {delay:200})
+bottom.reveal('.featured-name', {delay:200})
+bottom.reveal('.btnck', {delay:800})
+bottom.reveal('.expl', {delay:1000})
+bottom.reveal('.skills-list span:nth-child(1)', {delay:1600, opacity:0})
+bottom.reveal('.skills-list span:nth-child(2)', {delay:1700, opacity:0})
+bottom.reveal('.skills-list span:nth-child(3)', {delay:1800, opacity:0})
+bottom.reveal('.skills-list span:nth-child(4)', {delay:1900, opacity:0})
+bottom.reveal('.projek', {duration:1000, distance:'100px'})
+bottom.reveal('.projects', {duration:1000})
+bottom.reveal('.top-footer', {duration:2000})
+bottom.reveal('.bottom-footer', {duration:2000})
+bottom.reveal('.footer-social-icons', {duration:2000})
+bottom.reveal('.icon:nth-child(1)', {duration:1000, delay:200})
+bottom.reveal('.icon:nth-child(2)', {duration:1000, delay:400})
+bottom.reveal('.icon:nth-child(3)', {duration:1000, delay:600})
+bottom.reveal('.icon:nth-child(4)', {duration:1000, delay:800})
+bottom.reveal('.show-all', {distance: '80px', duration: 1000})
+bottom.reveal('.projek-sc4', {distance: '40px', duration: 1000})
+
+
+
+const kiri = ScrollReveal({
+    origin: 'left',
+    distance: '40px',
+    duration: 1000,
+    opacity:0,
+    reset: true     
+})
+kiri.reveal('.info-sc1', {delay:700})
+kiri.reveal('.sosmed-sc1 a:nth-child(1)', {delay:1100, opacity:0})
+kiri.reveal('.sosmed-sc1 a:nth-child(2)', {delay:1200, opacity:0})
+kiri.reveal('.sosmed-sc1 a:nth-child(3)', {delay:1300, opacity:0})
+kiri.reveal('.sosmed-sc1 a:nth-child(4)', {delay:1400, opacity:0})
+kiri.reveal('.info-sc2', {opacity:0})
+kiri.reveal('.skill-title')
+
+
+
+const kanan = ScrollReveal({
+    origin: 'right',
+    distance: '40px',
+    duration: 1000,
+    reset: true     
+})
+kanan.reveal('.profil', {delay:700})
+kanan.reveal('.col', {delay:500})
+
+
+
+const atas = ScrollReveal({
+    origin: 'top',
+    distance: '40px',
+    duration: 1000,
+    reset: true     
+})
+atas.reveal('.awalsc', {});
+atas.reveal('form', {delay:0});
+
+
+
+ 
  let typingEffect = new Typed(".typedText",{
     strings : ["Designer","Developer","Human"],
     loop : true,
@@ -145,75 +216,6 @@ sections.forEach(section => {
 }
 
 
-
-const bottom = ScrollReveal({
-    origin: 'bottom',
-    distance: '40px',
-    duration: 1000,
-    reset: true     
-})
-bottom.reveal('.nama-sc1', {})
-bottom.reveal('.featured-name', {delay:200})
-bottom.reveal('.featured-name', {delay:200})
-bottom.reveal('.btnck', {delay:800})
-bottom.reveal('.expl', {delay:1000})
-bottom.reveal('.skills-list span:nth-child(1)', {delay:1600, opacity:0})
-bottom.reveal('.skills-list span:nth-child(2)', {delay:1700, opacity:0})
-bottom.reveal('.skills-list span:nth-child(3)', {delay:1800, opacity:0})
-bottom.reveal('.skills-list span:nth-child(4)', {delay:1900, opacity:0})
-bottom.reveal('.projek', {duration:1000})
-bottom.reveal('.projects', {duration:1000})
-bottom.reveal('.top-footer', {duration:2000})
-bottom.reveal('.bottom-footer', {duration:2000})
-bottom.reveal('.footer-social-icons', {duration:2000})
-bottom.reveal('.icon:nth-child(1)', {duration:1000, delay:200})
-bottom.reveal('.icon:nth-child(2)', {duration:1000, delay:400})
-bottom.reveal('.icon:nth-child(3)', {duration:1000, delay:600})
-bottom.reveal('.icon:nth-child(4)', {duration:1000, delay:800})
-bottom.reveal('.show-all', {distance: '80px', duration: 1000})
-bottom.reveal('.projek-sc4', {distance: '40px', duration: 1000})
-
-
-
-const kiri = ScrollReveal({
-    origin: 'left',
-    distance: '40px',
-    duration: 1000,
-    opacity:0,
-    reset: true     
-})
-kiri.reveal('.info-sc1', {delay:700})
-kiri.reveal('.sosmed-sc1 a:nth-child(1)', {delay:1100, opacity:0})
-kiri.reveal('.sosmed-sc1 a:nth-child(2)', {delay:1200, opacity:0})
-kiri.reveal('.sosmed-sc1 a:nth-child(3)', {delay:1300, opacity:0})
-kiri.reveal('.sosmed-sc1 a:nth-child(4)', {delay:1400, opacity:0})
-kiri.reveal('.info-sc2', {opacity:0})
-kiri.reveal('.skill-title')
-
-
-
-const kanan = ScrollReveal({
-    origin: 'right',
-    distance: '40px',
-    duration: 1000,
-    reset: true     
-})
-kanan.reveal('.profil', {delay:700})
-kanan.reveal('.col', {delay:500})
-
-
-
-const atas = ScrollReveal({
-    origin: 'top',
-    distance: '40px',
-    duration: 1000,
-    reset: true     
-})
-atas.reveal('.awalsc', {});
-atas.reveal('form', {delay:0});
-
-
-
 document.addEventListener("DOMContentLoaded", setActiveLink);
 window.addEventListener("scroll", setActiveLink);
 function setActiveLink() {
@@ -235,13 +237,13 @@ function setActiveLink() {
 
 
 function redirectToWhatsApp() {
-    // Nomor WhatsApp yang dituju
-    var phoneNumber = '6287739770494'; // Ganti dengan nomor tujuan
-    // Teks yang akan menjadi draf pesan
-    var message = encodeURIComponent('🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥');
-    // URL untuk mengarahkan ke WhatsApp dengan nomor dan pesan draf
-    var url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
-    // Buka halaman WhatsApp dengan URL yang disiapkan
+    var phoneNumber = '6287739770494'; 
+    var nama = document.getElementById('nama').value;
+    var judul = document.getElementById('judul').value;
+    var isi = document.getElementById('isi').value;
+    var message = `*Pesan dari* *_${nama}_*  \n\n*Judul* *_${judul}_* \n ${isi}`;
+    var encodedMessage = encodeURIComponent(message);
+    var url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
     window.open(url);
 }
 

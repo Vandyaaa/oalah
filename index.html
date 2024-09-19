@@ -54,10 +54,7 @@
                 </p>
             </div>
             <div class="CONbtn-sc1">
-                <!-- <a href="asset/Portofolio FIrdhan.pdf" download="Portofolio FIrdhan.pdf,mkik" class="btn-sc1 btnck">
-                    <p>Haii</p>
-                </a> -->
-                <a download="" href="asset/Portofolio FIrdhan.pdf" class="btn-sc1 btnck" target="_blank">
+                <a download="" href="asset/kuceng.jpg" class="btn-sc1 btnck" target="_blank">
                     <i class="fi fi-br-down-to-line"></i>
                     <div class="ceve"><p>CV</p></div>
                 </a>
@@ -205,14 +202,17 @@
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d402.9684349500548!2d110.83579813551448!3d-7.56395221206352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMzMnNTAuMiJTIDExMMKwNTAnMTAuMCJF!5e1!3m2!1sid!2sid!4v1724573132174!5m2!1sid!2sid"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <form action="komentar.php" method="POST">
+            <form >
+                <!-- action="komentar.php" method="POST" -->
                 <div class="row-form">
-                    <input type="text" id="judul" name="judul" placeholder="Title" required autocomplete="off">
                     <input type="text" id="nama" name="nama" placeholder="Your name" required autocomplete="off">
+                    <input type="text" id="judul" name="judul" placeholder="Title" required autocomplete="off">
                 </div>
                 <textarea id="isi" name="isi" placeholder="Type Out Something" required autocomplete="off"></textarea>
+                
+                <button class="kirim" type="button" onclick="redirectToWhatsApp()"><i class="fi fi-br-paper-plane-top"></i></button>
+                </form>
 
-                <button class="kirim" type="submit"><i class="fi fi-br-paper-plane-top"></i></button>
             </form>
         </div>
     </section>
