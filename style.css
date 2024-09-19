@@ -1154,20 +1154,10 @@ span {
 
 @media (max-width:767px) {
 .komen .row-sc4 #nama{
-    border-left: dashed var(--8);
-    border-right: dashed var(--8);
-    border-bottom: none;
-    border-top: none;
-    border-radius: 0px 0px 0px 0px;
     transform: translateY(5px);
 }
 
 .komen .row-sc4 #judul{
-    border-left: dashed var(--8);
-    border-right: none;
-    border-bottom: none;
-    border-top: dashed var(--8);
-    border-radius: 10px 10px 0px 0px;
     transform: translateY(5px);
 }
 }
