@@ -11,7 +11,6 @@
     font-style: normal;
     font-style: normal;
     scroll-behavior: smooth;
-    transition: .5s;
     user-select: none;
 }
 
@@ -45,14 +44,19 @@ body {
 
 .logone{
     width: 100px;
+    display: flex;
+    
+    align-items: center;
     
 }
+
 
 .logone span{
     text-decoration: underline;
     text-decoration-thickness: 2px;
     font-size: 17px;
 }
+
 
 
 /* .mouse-follow {
@@ -279,7 +283,7 @@ span {
     place-items: center;
     padding: 0px 0px;
     overflow: hidden;
-    transition: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: .3s ;
 }
 
 .home .btnck i {
@@ -1123,6 +1127,8 @@ span {
     text-decoration: none;
 }
 
+
+
 .komen .row-sc4 form {
     display: flex;
     flex-direction: column;
@@ -1172,7 +1178,7 @@ width: 100%;
     resize: none;
 }
 
-.komen .kirim{
+.komen .kirim, #error-message{
     background-color: var(--8);
     border: none;
     height: 50px;
@@ -1187,6 +1193,22 @@ width: 100%;
     place-items: center;
 }
 
+#error-message{
+    font-size: 12px;
+    padding: 10px;
+    right: 70px;
+    width: calc(100% - 80px);
+    bottom: -100%;
+    background-color: rgb(228, 38, 38);
+    transition: .5s;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#error-message i{
+    margin-right: 10px;
+}
 .komen .kirim i{
     width: max-content;
     display: grid;
@@ -1274,3 +1296,52 @@ footer .bottom-footer p a{
     color: rgb(179, 255, 230);
     font-weight: 600;
 }
+
+
+                #backToTop {
+                    position: fixed;
+                    bottom: -100%;
+                    right: 30px;
+                    
+                    /* Sembunyikan tombol secara default */
+                    height: 40px;
+                    border: none;
+                    font-size: 18px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    z-index: 1000;
+                    transition: opacity 0.3s ease;
+                    transition: 1s;
+                    /* Transisi untuk efek muncul */
+                    overflow: hidden;
+                    background-color: transparent;
+                }
+
+                #backToTop .firo1, .firo2{
+                    width: 50px;
+                    height: 40px;
+                    display: grid;
+                    place-items: center;
+                    position: relative;
+                    transition: .2s;
+                }
+
+                .firo1{
+                    background-color: var(--dr3);
+                    color: var(--1);
+                }
+
+                .firo2{
+                    background-color: var(--1);
+                    color: var(--5);
+                    font-size: 10px;
+                    font-weight: 600;
+                }
+        
+                #backToTop:hover .firo1{
+                    transform: translateY(-40px);
+                }
+
+                #backToTop:hover .firo2{
+                    transform: translateY(-40px);
+                }

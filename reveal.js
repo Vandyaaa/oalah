@@ -86,3 +86,22 @@ function desk() {
         desk.classList.toggle("swapkanan");
     });
 }
+        var backToTopButton = document.getElementById("backToTop");
+
+        // Fungsi untuk memantau posisi scroll
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                backToTopButton.style.bottom = "20px"; // Tampilkan tombol jika scroll > 1000px
+            } else {
+                backToTopButton.style.bottom = "-100%";
+                
+            }
+        };
+
+        // Fungsi untuk scroll kembali ke atas
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Efek smooth scrolling
+            });
+        }

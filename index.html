@@ -12,6 +12,7 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="shortcut icon" href="asset/Bie-ligt.png" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -25,8 +26,9 @@
     </div>
     <div class="nav" id="nav">
         <div class="logo-header">
-            <p class="logone"><span>F</span>irdhan.</p>
-            <!-- <span class="bieweb">web.</span> -->
+            <img src="asset/fa.png" alt="">
+            <p class="logone">Firdhan.</p>
+           
         </div>
         <div id="menu">
             <ul>
@@ -54,10 +56,14 @@
                 </p>
             </div>
             <div class="CONbtn-sc1">
-                <a download="" href="asset/kuceng.jpg" class="btn-sc1 btnck" target="_blank">
-                    <i class="fi fi-br-down-to-line"></i>
-                    <div class="ceve"><p>CV</p></div>
-                </a>
+                <div class="downl">
+                    <a download="" href="asset/kuceng.jpg" class="btn-sc1 btnck" target="_blank">
+                        <i class="fi fi-br-down-to-line"></i>
+                        <div class="ceve">
+                            <p>CV</p>
+                        </div>
+                    </a>
+                </div>
                 
                 <a href="#about" class="btn-sc1 expl">
                     <p>Lebih Banyak Lagi!</p>
@@ -209,7 +215,7 @@
                     <input type="text" id="judul" name="judul" placeholder="Title" required autocomplete="off">
                 </div>
                 <textarea id="isi" name="isi" placeholder="Type Out Something" required autocomplete="off"></textarea>
-                
+                <div id="error-message"><i class="fi fi-br-exclamation"></i></div>
                 <button class="kirim" type="button" onclick="redirectToWhatsApp()"><i class="fi fi-br-paper-plane-top"></i></button>
                 </form>
 
@@ -221,7 +227,7 @@
 
     <footer>
         <div class="top-footer">
-            <p class="logone logone2">Bie.</p>
+            <img src="asset/fa.png" alt="">
         </div>
         <div class="footer-social-icons">
             <a href="https://www.instagram.com/aeropostaleize?igsh=YzVkODRmOTdmMw==" class="icon" data-sr-id="27" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.2s;"><i class="uil uil-instagram"></i></a>
@@ -234,13 +240,12 @@
             </p>
         </div>
     </footer>
-    <div class="backatas" id="backatas" onclick="scrollToTop()">
-        <lord-icon src="https://cdn.lordicon.com/dwoxxgps.json" trigger="hover">
-        </lord-icon>
-    </div>
-    
+    <button id="backToTop" onclick="scrollToTop()">
+        <i class="firo1 fi-br-arrow-small-up"></i>
+        <i class="firo2">up?</i>
+    </button>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>

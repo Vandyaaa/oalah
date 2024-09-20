@@ -1,16 +1,19 @@
  
 
 const bottom = ScrollReveal({
-    origin: 'bottom',
+    
     distance: '40px',
     duration: 1000,
-    reset: true     
+    opacity:0,
+    origin: 'bottom',
+    reset: true ,
+    viewFactor: 0.1
 })
 bottom.reveal('.nama-sc1', {})
 bottom.reveal('.featured-name', {delay:200})
 bottom.reveal('.featured-name', {delay:200})
-bottom.reveal('.btnck', {delay:800})
-bottom.reveal('.expl', {delay:1000})
+bottom.reveal('.expl', {delay:800})
+bottom.reveal('.downl', {delay:600})
 bottom.reveal('.skills-list span:nth-child(1)', {delay:1600, opacity:0})
 bottom.reveal('.skills-list span:nth-child(2)', {delay:1700, opacity:0})
 bottom.reveal('.skills-list span:nth-child(3)', {delay:1800, opacity:0})
@@ -149,31 +152,8 @@ function desk() {
 
 
 
-function checkBottom() {
-    var scrollTop = window.scrollY || document.documentElement.scrollTop;
-    var scrollHeight = document.documentElement.scrollHeight;
-    var clientHeight = document.documentElement.clientHeight;
-    if (scrollTop + clientHeight >= scrollHeight) {
-        document.getElementById("backatas").style.opacity = 1;
-    } else {
-        document.getElementById("backatas").style.opacity = 0;
-    }
-}
-// Event listener untuk memeriksa saat halaman di-scroll
-window.addEventListener("scroll", function() {
-    checkBottom();
-});
 
 
-
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-}
-// Memeriksa status saat halaman dimuat
-checkBottom();
 
 
 
@@ -237,16 +217,44 @@ function setActiveLink() {
 
 
 function redirectToWhatsApp() {
+    // Ambil nilai input dari form
+    var nama = document.getElementById('nama').value.trim();
+    var judul = document.getElementById('judul').value.trim();
+    var isi = document.getElementById('isi').value.trim();
+
+    // Elemen untuk pesan error
+    var errorMessageDiv = document.getElementById('error-message');
+    
+    // Reset pesan error
+    errorMessageDiv.textContent = "";
+
+    // Validasi jika input masih kosong
+    if (!nama || !judul || !isi) {
+        // Tampilkan pesan error di dalam div
+        errorMessageDiv.innerHTML = '<i class="fi fi-br-exclamation"></i>Mohon lengkapi semua kolom';
+        errorMessageDiv.style.bottom = '10px';
+        errorMessageDiv.style.opacity = '1';
+        
+        return; // Hentikan fungsi jika ada input yang kosong
+    }
+
+    
+
+    // Nomor WhatsApp yang dituju (sesuaikan dengan nomor tujuan)
     var phoneNumber = '6287739770494'; 
-    var nama = document.getElementById('nama').value;
-    var judul = document.getElementById('judul').value;
-    var isi = document.getElementById('isi').value;
-    var message = `*Pesan dari* *_${nama}_*  \n\n*Judul* *_${judul}_* \n ${isi}`;
+
+    // Format pesan dengan Nama dan Judul menjadi teks bold dan italic
+    var message = `*_*Nama:*_ ${nama}\n*_*Judul:*_ ${judul}\nPesan: ${isi}`;
+
+    // Encode pesan agar aman untuk URL
     var encodedMessage = encodeURIComponent(message);
+
+    // URL untuk mengarahkan ke WhatsApp
     var url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+
+    // Buka halaman WhatsApp dengan URL yang disiapkan
     window.open(url);
 }
-
 
 
 // document.addEventListener('mousemove', function(e) {
@@ -255,3 +263,23 @@ function redirectToWhatsApp() {
 //     mouseDiv.style.top = e.pageY + 'px';
 // });
 
+  // Dapatkan elemen button
+        var backToTopButton = document.getElementById("backToTop");
+
+        // Fungsi untuk memantau posisi scroll
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                backToTopButton.style.bottom = "20px"; // Tampilkan tombol jika scroll > 1000px
+            } else {
+                backToTopButton.style.bottom = "-100%";
+                
+            }
+        };
+
+        // Fungsi untuk scroll kembali ke atas
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Efek smooth scrolling
+            });
+        }

@@ -7,6 +7,14 @@
     font-size: 17px;
 }
 
+.logo-header img {
+    width: 30px;
+    display: block;
+    height: 30px;
+    background-position: center;
+    margin: 10px;
+}
+
 .bieweb{
     background-color: var(--8);
     color: var(--1);
@@ -46,17 +54,10 @@
     height: 50px;
     border-radius: 100px;
     position: relative;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
     z-index: 110;
 }
-
-.nav .logo-header img {
-    height: 50px;
-    position: relative;
-    scale: 1.3;
-}
-
 
 
 /* 
