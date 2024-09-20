@@ -25,7 +25,7 @@ body {
 
 ::-webkit-scrollbar{
     background-color: var(--dr3);
-    width: 10px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-button{
@@ -33,9 +33,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: var(--1);
-    border: 2px double var(--5);
-    border-radius: 10px;
+    background-color: var(--dr5);
 }
 
 .expl, .btnck, .logone, .expand, .send, footer, button{
@@ -43,10 +41,7 @@ body {
 }
 
 .logone{
-    width: 100px;
-    display: flex;
-    
-    align-items: center;
+    width: 200px;
     
 }
 
@@ -283,7 +278,6 @@ span {
     place-items: center;
     padding: 0px 0px;
     overflow: hidden;
-    transition: .3s ;
 }
 
 .home .btnck i {
@@ -298,6 +292,7 @@ span {
     place-items: center;
     opacity: 1;
     scale: 1;
+    transition: .4s;
 }
 
 .home .btnck .ceve{
@@ -313,6 +308,7 @@ span {
     place-items: center;
     font-weight: 600;
     border-radius: 10px;
+    transition: .4s;
 }
 
 .ceve p{
@@ -590,6 +586,7 @@ span {
     overflow: hidden;
     position: relative;
     transition: .5s;
+    background-color: transparent;
 }
 
 
@@ -622,8 +619,7 @@ span {
     height: 50%;
     gap: 20px;
     transition: 1s;
-    background-color: transparent;
-   
+    padding-bottom: 20px;
 }
 
 .projek {
@@ -640,7 +636,6 @@ span {
     color: var(--5);
     transition: .4s;
         border: solid 3px var(--dr3);
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     
         background-size: cover;
         /* gambar akan memenuhi div */
@@ -703,7 +698,7 @@ span {
 .pj-title {
     content: "";
     position: absolute;
-    color: var(--8);
+    color: var(--1);
     width: 100%;
     height: 100%;
     font-size: 20px;
@@ -722,7 +717,6 @@ span {
     opacity: 1;
     color: var(--1);
 }
-
 
 /* Style for the modal */
 .modal {
@@ -776,6 +770,7 @@ span {
     transform: translateY(0) scale(1);
     -webkit-user-drag: none;
     position: relative;
+    transition: .4s;
 }
 
 .modal-content.swapkanan{
@@ -795,6 +790,7 @@ span {
     border-radius:  0px 100px 100px 0px;
     animation-duration: 0.6s;
     transform: translateY(0);
+    transition: .4s;
 }
 
 
@@ -823,6 +819,7 @@ span {
     font-weight: 1000;
     animation-duration: 0.6s;
     transform: translateY(0);
+    transition: .4s;
 }
 
 #caption.swapkanan {
@@ -840,6 +837,7 @@ span {
     bottom: 0;
     overflow: hidden;
     border: solid 3px var(--dr3);
+    transition: .4s;
 }
 
 .desc.swapkanan{
@@ -860,6 +858,7 @@ span {
     font-weight: 800;
     color: var(--1);
     border-radius: 100px;
+    transition: .4s;
 }
 
 .mor .fi, 
@@ -917,6 +916,7 @@ span {
     text-align: center;
     padding: 60px;
     opacity: 0;
+    transition: .4s;
 }
 
 .con-desk.swapkanan{
@@ -1024,6 +1024,7 @@ span {
         grid-template-rows: repeat(6, 1fr);
         width: 100%;
         gap: 20px;
+        background-color: transparent;
     }
 
     .row-sc3 .projek {
@@ -1250,10 +1251,13 @@ footer{
     z-index: 99;
 }
 
-footer .top-footer{
-    width: 100px;
+.imgfo{
+    width: 70px;
 }
 
+footer .top-footer{
+    padding: 20px;
+}
 .logone2{
     text-align: center;
 }

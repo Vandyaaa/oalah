@@ -242,7 +242,6 @@
         z-index: 103;
         width: 50px;
         height: 50px;
-        z-index: 101;
         padding: 6px 0px;
         transform: scale(.6);
         transition: .5s;
@@ -275,23 +274,25 @@
         background-color: var(--dr3);
         width: calc(100%);
         top: 0px;
-        left: 50%;
+        left: 0;
         padding-right: 10px;
         margin: 0;
         z-index: 100;
         transition: .5s;
         border-radius: 0;
-        transform: translateX(-50%);
+        transform: translateX(0%) rotate(2deg);
         overflow: hidden;
-        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 80%);
+
     }
 
     .nav #menu ul{
         position: relative;
         height: 100%;
         width: calc(120% - 70px);
-        transform: rotate(2.5deg) translateX(-100%);
+        transform: translateX(-100%);
+        opacity: 0;
         transition: .5s;
+        transition: all 1s, opacity .1s;
     }
 
     .nav #menu ul li a {
@@ -306,7 +307,9 @@
     }
 
     .nav #menu.buka ul{
-        transform: rotate(2.5deg) translateX(0px);
+        transform:translateX(0px);
+        opacity: 1;
+        transition: all 1s, opacity 0s;
     }
 
         .nav #menu ul li {
@@ -324,7 +327,7 @@
     
         .nav #menu.buka {
             height: 100px;
-            transform: translateY(60px) translateX(0%);
+            transform: translateY(50px) translateX(0%) rotate(2deg);
             left: 0;
         }
     
