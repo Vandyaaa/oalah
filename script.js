@@ -244,7 +244,7 @@ function redirectToWhatsApp() {
     var phoneNumber = '6287739770494'; 
 
     // Format pesan dengan Nama dan Judul menjadi teks bold dan italic
-    var message = `*_*Nama:*_ ${nama}\n*_*Judul:*_ ${judul}\nPesan: ${isi}`;
+    var message = `*_*Nama:*_* ${nama}\n*_*Judul:*_* ${judul}\nPesan: ${isi}`;
 
     // Encode pesan agar aman untuk URL
     var encodedMessage = encodeURIComponent(message);
