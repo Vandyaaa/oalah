@@ -29,6 +29,7 @@ bottom.reveal('.icon:nth-child(3)', {duration:1000, delay:600})
 bottom.reveal('.icon:nth-child(4)', {duration:1000, delay:800})
 bottom.reveal('.show-all', {distance: '80px', duration: 1000})
 bottom.reveal('.projek-sc4', {distance: '40px', duration: 1000})
+bottom.reveal('.btnck2', {distance: '40px', duration: 1000, delay:1000})
 
 
 

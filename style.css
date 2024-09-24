@@ -300,7 +300,6 @@ span {
     height: 50px;
     opacity: 0;
     visibility: hidden;
-    background-color: var(--1);
     color: var(--5);
     scale: 0;
     position: absolute;
@@ -315,12 +314,49 @@ span {
     font-weight: 600;
 }
 
-.home .btnck:hover i{
-    scale: 0;
-    opacity: 0;
+.btnck{
+    transition: .3s;
 }
 
-.home .btnck:hover .ceve {
+.btnck2 img{
+    width: 50%;
+    transition: .5s;
+    position: absolute;
+}
+
+.img-light{
+    scale: 1;
+    transition: .5s;
+}
+
+.img-dark{
+    scale: 0;
+    transition: .5s;
+}
+
+.btnck2:hover{
+    background-color: var(--1);
+}
+
+.btnck2:hover .img-light{
+    scale: 0;
+}
+
+.btnck2:hover .img-dark {
+    scale: 1;
+}
+
+.btnck:hover{
+    background-color: var(--1);
+}
+
+.btnck:hover i {
+    scale: 0;
+    opacity: 0;
+    visibility: visible;
+}
+
+.btnck:hover .ceve {
     scale: 1;
     opacity: 1;
     visibility: visible;
