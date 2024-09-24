@@ -12,13 +12,14 @@ const bottom = ScrollReveal({
 bottom.reveal('.nama-sc1', {})
 bottom.reveal('.featured-name', {delay:200})
 bottom.reveal('.featured-name', {delay:200})
-bottom.reveal('.expl', {delay:800})
-bottom.reveal('.downl', {delay:600})
+bottom.reveal('.expl', {delay:1000})
+bottom.reveal('.sl-donlod', { delay:600})
+bottom.reveal('.sl-repo', {delay:800})
 bottom.reveal('.skills-list span:nth-child(1)', {delay:600, opacity:0})
 bottom.reveal('.skills-list span:nth-child(2)', {delay:700, opacity:0})
 bottom.reveal('.skills-list span:nth-child(3)', {delay:800, opacity:0})
 bottom.reveal('.skills-list span:nth-child(4)', {delay:900, opacity:0})
-bottom.reveal('.projek', {duration:1000, distance:'100px'})
+bottom.reveal('.projek', {duration:1000,scale:0 , distance:'100px'})
 bottom.reveal('.projects', {duration:1000})
 bottom.reveal('.top-footer', {duration:2000})
 bottom.reveal('.bottom-footer', {duration:2000})
@@ -29,7 +30,7 @@ bottom.reveal('.icon:nth-child(3)', {duration:1000, delay:600})
 bottom.reveal('.icon:nth-child(4)', {duration:1000, delay:800})
 bottom.reveal('.show-all', {distance: '80px', duration: 1000})
 bottom.reveal('.projek-sc4', {distance: '40px', duration: 1000})
-bottom.reveal('.btnck2', {distance: '40px', duration: 1000, delay:1000})
+bottom.reveal('.kirim', {distance: '0px',scale:0,delay:500, duration: 1000})
 
 
 
@@ -56,8 +57,11 @@ const kanan = ScrollReveal({
     duration: 1000,
     reset: true     
 })
-kanan.reveal('.profil', {delay:700})
+kanan.reveal('.profil', {delay:1500})
 kanan.reveal('.col', {delay:500})
+kanan.reveal('.skills-box:nth-child(1)', {delay:200})
+kanan.reveal('.skills-box:nth-child(2)', {delay:600})
+kanan.reveal('.skills-box:nth-child(3)', {delay:800})
 
 
 
@@ -224,7 +228,7 @@ function redirectToWhatsApp() {
     var isi = document.getElementById('isi').value.trim();
 
     // Elemen untuk pesan error
-    var errorMessageDiv = document.getElementById('error-message');
+    var errorMessageDiv = document.getElementById('error-messages');
     
     // Reset pesan error
     errorMessageDiv.textContent = "";
@@ -232,7 +236,7 @@ function redirectToWhatsApp() {
     // Validasi jika input masih kosong
     if (!nama || !judul || !isi) {
         // Tampilkan pesan error di dalam div
-        errorMessageDiv.innerHTML = '<i class="fi fi-br-exclamation"></i>Mohon lengkapi semua kolom';
+        errorMessageDiv.innerHTML = '<div id="error-message"><i class="fi fi-br-exclamation"></i>please fill in all fields</div>';
         errorMessageDiv.style.bottom = '10px';
         errorMessageDiv.style.opacity = '1';
         
