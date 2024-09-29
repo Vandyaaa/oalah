@@ -21,6 +21,19 @@
 
 body {
     background-color: var(--5);
+    background-image: url(asset/10\ Essential\ Tips\ For\ Amazing\ iPhone\ Night\ Photography.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.text {
+    position: relative;
+    color: white;
+    font-size: 2em;
+    z-index: 1;
 }
 
 ::-webkit-scrollbar{
@@ -248,6 +261,8 @@ span {
 
 .home .section-1-kiri .CONbtn-sc1 {
     display: flex;
+    justify-content: space-between;
+    width: 260px;
     margin: 30px 0px;
     text-decoration: none;
     
@@ -261,7 +276,6 @@ span {
     
     height: 50px;
     border-radius: 10px;
-    margin-right: 10px;
     display: grid;
     place-items: center;
     font-size: 10px;
@@ -427,12 +441,12 @@ span {
     width: 230px;
     height: 230px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #292723, #312b23);
+    background: var(--dr3);
     object-fit: contain;
     position: relative;
     overflow: hidden;
     z-index: 1;
-    border: solid 3px var(--dr3);
+    border: solid 3px var(--5);
     user-select: none;
     animation: animateBackground 5s ease infinite;
     
@@ -494,15 +508,14 @@ span {
 }
 
 .about .info-sc2 {
-    padding: 20px;
     min-width: 200px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: space-between;
-    background-color: var(--5);
-    border: solid 3px var(--dr3);
+    background-color: var(--dr3);
+    /* border: solid 3px var(--dr3); */
     color: var(--1);
     border-radius: 20px;
 }
@@ -510,15 +523,25 @@ span {
 .about .info-sc2 .head-info {
     font-size: 25px;
     font-weight: 600;
-    padding: 20px;
+    padding-block: 20px;
     text-align: center;
 }
 
 .about .info-sc2 .isi-info {
     font-size: clamp(0.75rem, 0.275rem + 1vw, 1rem);
     padding: 30px;
-    text-align: center;
     margin-top: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.about .info-sc2 .isi-info::before {
+    content: '';
+    height: calc(100% - 60px);
+    width: 4px;
+    background-color: var(--8);
+    position: absolute;
+    transform: translateX(-10px);
 }
 
 
@@ -571,7 +594,7 @@ span {
 
 .con-skill{
     width: 50%;
-    padding: 50px;
+    padding-inline: 50px;
     display: block;
 }
 
@@ -601,7 +624,6 @@ span {
     .con-skill{
     padding-inline: none;
     width: 100%;
-    padding: 50px;
     display: block;
 }
     .con-skill h1 {
