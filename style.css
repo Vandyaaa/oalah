@@ -544,6 +544,10 @@ span {
     transform: translateX(-10px);
 }
 
+.isi-info{
+    font-size: 12px
+}
+
 
 
 .skills-box {
