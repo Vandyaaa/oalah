@@ -4,22 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="coba.css">
+    <title>Pie Chart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.js">
 </head>
 
 <body>
 
-    <svg id="hearts" viewBox="-600 -400 1200 800" preserveAspectRatio="xMidYMid slice">
-        <defs>
-            <symbol id="heart" viewBox="-69 -16 138 138">
-                <path d="M0,12
-                         C 50,-30 110,50  0,120
-                         C-110,50 -50,-30 0,12z" />
-            </symbol>
-        </defs>
-    </svg>
+<canvas id="myChart" width="400" height="400"></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.js"></script>
+<script>
+    const data = {
+        labels: [
+            'Red',
+            'Green',
+            'Yellow',
+            'Grey',
+            'Blue'
+        ],
+        datasets: [{
+            label: 'My First Dataset',
+            data: [11, 16, 7, 3, 14],
+            backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(75, 192, 192)',
+                'rgb(255, 205, 86)',
+                'rgb(201, 203, 207)',
+                'rgb(54, 162, 235)'
+            ]
+        }]
+    };
+
+    const config = {
+        type: 'polarArea',
+        data: data,
+        options: {}
+    };
+
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+</script>
 </body>
 
 </html>

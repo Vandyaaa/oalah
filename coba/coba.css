@@ -1,5 +1,9 @@
-svg {
-    width: 100vw;
-    height: 100vh;
-    z-index: -3;
+.legend {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.legend span {
+    margin: 5px 0;
 }

@@ -259,13 +259,16 @@ span {
     color: var(--wt3);
 }
 
+.sl-repo{
+    display: flex;
+}
+
 .home .section-1-kiri .CONbtn-sc1 {
     display: flex;
     justify-content: space-between;
-    width: 260px;
     margin: 30px 0px;
     text-decoration: none;
-    
+    gap: 10px;
 }
 
 .home .section-1-kiri .CONbtn-sc1 .btn-sc1 p {
@@ -294,38 +297,23 @@ span {
     overflow: hidden;
 }
 
-.home .btnck i {
-    transition: .3s;
-    font-weight: 600;
-    font-size: 15px;
-    display: grid;
-    background-color: transparent;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    place-items: center;
-    opacity: 1;
-    scale: 1;
-    transition: .4s;
-}
-
-.home .btnck .ceve{
+.download {
+    background-color: var(--dr3);
+    color: var(--1);
     width: 50px;
     height: 50px;
-    opacity: 0;
-    visibility: hidden;
-    color: var(--5);
-    scale: 0;
-    position: absolute;
     display: grid;
     place-items: center;
-    font-weight: 600;
+    position: relative;
+    padding: 0px 0px;
+    overflow: hidden;
+    transition: .5s;
     border-radius: 10px;
-    transition: .4s;
+    font-size: 20px;
 }
 
-.ceve p{
-    font-weight: 600;
+.download i{
+    transform: translateY(3px);
 }
 
 .btnck{
@@ -491,6 +479,8 @@ span {
     padding: 0px 12%;
     padding-block: 5em;
     overflow: hidden;
+    min-height: 100vh;
+    height: min-content;
 }
 
 @media (max-width:760px) {
@@ -507,17 +497,38 @@ span {
     align-items: center;
 }
 
+.about .col-sc2 {
+    display: block;
+    height: max-content;
+}
+
+.sc2-kiri{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    place-items: center;
+}
+
+
 .about .info-sc2 {
-    min-width: 200px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: space-between;
-    background-color: var(--dr3);
+background: rgb(33, 19, 19);
+    background: linear-gradient(145deg, rgba(33, 19, 19, 1) 0%, rgba(74, 68, 60, 0) 100%);
     /* border: solid 3px var(--dr3); */
     color: var(--1);
     border-radius: 20px;
+    transition: .5s;
+    background-size: 100%;
+    background-position: center;
+}
+
+.about .info-sc2:hover{
+    background-size: 600%;
 }
 
 .about .info-sc2 .head-info {
@@ -529,26 +540,200 @@ span {
 
 .about .info-sc2 .isi-info {
     font-size: clamp(0.75rem, 0.275rem + 1vw, 1rem);
-    padding: 30px;
-    margin-top: 0;
+    padding: 30px 30px 30px 30px;
+    width: calc(100%);
     position: relative;
     overflow: hidden;
 }
 
-.about .info-sc2 .isi-info::before {
-    content: '';
-    height: calc(100% - 60px);
-    width: 4px;
+
+@media (max-width:760px) {
+    .sc2-kiri {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        width: 100%;
+    }
+
+
+}
+
+.garis-hz-sc2{
+    height: 3px;
+    width: 90px;
+}
+
+.kotak-downl{
+    width: 100%;
+    padding-block: 10px;
+    display: flex;
+}
+
+
+.isi-info p{
+    font-size: clamp(12px, (2.5vw), 16px);
+}
+
+.isi-info h4{
+    font-size: clamp(14px, (2.5vw), 18px);
+    
+}
+
+.isi-info .h4-1-sc2{
+    padding: 10px;
+        background-color: var(--8);
+        width: min-content;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.isi-info::before:nth-child(1) .skil {
+    display: none;
+}
+
+.isi-info .skil{
+    text-align: left;
+}
+
+.isi-info .skil span{
+    font-size: 16px;
+    padding: 12px;
+    margin-top: 3px;
+    width: max-content;
+    display: inline-block;
+    background-color: var(--1);
+    color: var(--5);
+    border-radius: 5px;
+}
+
+.isi-info .skil span i{
+    margin-right: 5px;
+}
+
+.isi-info .h4-2-sc2{
+    position: relative;
+    padding: 10px;
     background-color: var(--8);
+    width: min-content;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    right: 0;
+}
+
+.isi-info .h4-3-sc2 {
+    position: relative;
+    padding: 10px;
+    background-color: var(--8);
+    width: min-content;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    right: 0;
+    font-size: clamp(14px, (2.5vw), 18px);
+}
+
+.garis-hz-sc2{
+    width: 50%;
+    height: 3px;
+    background-color: var(--1);
+}
+
+.row-con-p{
+    display: flex;
+    align-items: center;
+}
+
+.row-con-p .garis-cr {
+    width: 3px;
+    height: 85px;
+    background-color: rgba(236, 226, 204,0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.row-con-p .dot-p{
+    width: 9px;
+    height: 9px;
+    background-color: var(--1);
+    border-radius: 10px;
+}
+
+.row-con-p i{
     position: absolute;
-    transform: translateX(-10px);
+    right: 0;
+    transform: translateX(-20%);
+    opacity: .2;
+    font-size: clamp(104px, (2.5vw), 128px);
 }
 
-.isi-info{
-    font-size: 12px
+.con-p{
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.isi-info .skil span:nth-child(1) {background-color: rgb(221, 38, 38); color: var(--1);}
+.isi-info .skil span:nth-child(2) {background-color: rgb(66, 66, 245); color: var(--1);}
+.isi-info .skil span:nth-child(3) {background-color: yellow;}
+.isi-info .skil span:nth-child(4) {background-color: rgb(143, 53, 185); color: var(--1);}
+.isi-info .skil span:nth-child(5) {background-color: rgb(166, 196, 241);}
+.isi-info .skil span:nth-child(6) {background-color: rgb(142, 21, 179); color: var(--1);}
+.isi-info .skil span:nth-child(7) {background-color: greenyellow;}
+.isi-info .skil span:nth-child(8) {background-color: black; color: var(--1);}
+
+.col-sc2 .hbb{
+    height: 200px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.col-sc2 .hbb ul {
+    padding-left: 20px;
+}
+
+.col-sc2 .hbb ul li{
+    font-size: 14px;
+    margin-block: 10px;
 }
 
 
+.intr {
+    height: min-content;
+    position: relative;
+}
+
+.intr::before{
+    content: '';
+    width: 100%;
+    height: fit-content;
+    background-color: red;
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+}
+
+.kotak-carr{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.kotak-carr h1{
+    font-size: 14px;
+    padding: 5px;
+    background-color: ;
+}
 
 .skills-box {
     margin: 10px;
@@ -624,6 +809,14 @@ span {
         display: flex;
         flex-direction: column;
     }
+
+        .sc2-kiri {
+            display: grid;
+            grid-template-columns: 1fr;
+            
+            gap: 10px;
+            width: 100%;
+        }
 
     .con-skill{
     padding-inline: none;
