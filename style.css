@@ -306,6 +306,11 @@ span {
     color: var(--1);
     width: 50px;
     height: 50px;
+    opacity: 0;
+    visibility: hidden;
+    color: var(--5);
+    scale: 0;
+    position: absolute;
     display: grid;
     place-items: center;
     position: relative;
@@ -325,7 +330,7 @@ span {
 }
 
 .btnck2 img{
-    width: 25px;
+    width: 50%;
     transition: .5s;
     position: absolute;
 }
@@ -359,10 +364,9 @@ span {
 .btnck:hover i {
     scale: 0;
     opacity: 0;
-    visibility: visible;
 }
 
-.btnck:hover .ceve {
+.home .btnck:hover .ceve {
     scale: 1;
     opacity: 1;
     visibility: visible;

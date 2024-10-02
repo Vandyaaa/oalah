@@ -30,7 +30,10 @@ bottom.reveal('.icon:nth-child(3)', {duration:1000, delay:600})
 bottom.reveal('.icon:nth-child(4)', {duration:1000, delay:800})
 bottom.reveal('.show-all', {distance: '80px', duration: 1000})
 bottom.reveal('.projek-sc4', {distance: '40px', duration: 1000})
+<<<<<<< HEAD
 bottom.reveal('.kirim', {distance: '0px',scale:0,delay:500, duration: 1000})
+=======
+>>>>>>> parent of 469bf78 (hjghjghhghghhjhjnknoiif)
 
 
 
