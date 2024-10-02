@@ -210,6 +210,10 @@ section {
     align-items: center;
     flex-direction: row;
     padding: 0px 12%;
+    background-color: var(--1);
+    position: fixed;
+    z-index: -2;
+    top: 0;
 }
 
 .home .section-1-kiri {
@@ -232,11 +236,11 @@ section {
 }
 
 .Prtyp{
-    color: var(--1);
+    color: var(--dr3);
 }
 
 .typedText{
-    color: var(--1);
+    color: var(--dr3);
     text-decoration: underline;
     opacity: 1;
 }
@@ -252,11 +256,11 @@ span {
 .home .section-1-kiri .info-sc1 {
     margin-top: 25px;
     font-size: clamp(12px, (2.5vw), 16px);
-    color: rgb(97, 93, 93);
+    color: rgb(14, 13, 13);
 }
 
 .info-sc1 p{
-    color: var(--wt3);
+    color: var(--dr3);
 }
 
 .sl-repo{
@@ -481,6 +485,8 @@ span {
     overflow: hidden;
     min-height: 100vh;
     height: min-content;
+    background-color: var(--dr3);
+    margin-top: 100vh;
 }
 
 @media (max-width:760px) {
@@ -498,7 +504,9 @@ span {
 }
 
 .about .col-sc2 {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     height: max-content;
 }
 
@@ -593,6 +601,7 @@ background: rgb(33, 19, 19);
 
 .isi-info .skil{
     text-align: left;
+    margin-top: 10px;
 }
 
 .isi-info .skil span{
@@ -687,9 +696,9 @@ background: rgb(33, 19, 19);
 .isi-info .skil span:nth-child(7) {background-color: greenyellow;}
 .isi-info .skil span:nth-child(8) {background-color: black; color: var(--1);}
 
-.col-sc2 .hbb{
-    height: 200px;
+.carir{
     margin-top: 10px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -697,15 +706,35 @@ background: rgb(33, 19, 19);
     flex-direction: row;
 }
 
-.col-sc2 .hbb ul {
-    padding-left: 20px;
+.carir .isi-info{
+    height: 100%;
+    display: flex;
+    
 }
 
-.col-sc2 .hbb ul li{
-    font-size: 14px;
-    margin-block: 10px;
+.carir .isi-info .rule{
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
 }
 
+.school{
+    width: 100px;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 100px;
+    background-color: black;
+}
+
+.school p{
+    font-size: 10px;
+}
 
 .intr {
     height: min-content;
@@ -732,7 +761,6 @@ background: rgb(33, 19, 19);
 .kotak-carr h1{
     font-size: 14px;
     padding: 5px;
-    background-color: ;
 }
 
 .skills-box {
@@ -842,6 +870,7 @@ background: rgb(33, 19, 19);
     padding-block: 5em;
     height: 100%;
     transition: .5s;
+    background-color: var(--dr3);
 }
 
 .container-rowsc3{
